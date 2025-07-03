@@ -1,0 +1,10 @@
+langchain
+chromadb
+huggingface-hub
+fastapi 
+streamlit
+youtube-transcript-api
+uvicorn
+python-dotenv  
+google.generativeai
+google-genai
