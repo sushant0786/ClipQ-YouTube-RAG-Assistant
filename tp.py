@@ -11,6 +11,7 @@ def embed_batch(texts: List[str]) -> List[List[float]]:
     return [e.embedding for e in resp.embeddings]
 
 
+
 class GoogEmbedder:                    # LangChain wrapper
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         return embed_batch(texts)
