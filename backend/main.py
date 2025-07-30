@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from backend.routes.youtube_router import router
 
+
 app=FastAPI(
   title="ClipQ YouTube RAG API",
   version="0.1.0",
