@@ -5,6 +5,8 @@ from backend.services.transcript_service import get_transcript
 from typing import List
 
 
+
+
 @lru_cache(maxsize=32)
 def get_collection(url:str):
   transcript=get_transcript(url)
