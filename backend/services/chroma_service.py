@@ -4,6 +4,7 @@ from backend.utils.chromadb_helpers import create_chroma_db,topk_relevent_chunks
 from backend.services.transcript_service import get_transcript
 from typing import List
 
+
 @lru_cache(maxsize=32)
 def get_collection(url:str):
   transcript=get_transcript(url)
