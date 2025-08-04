@@ -68,6 +68,7 @@ def answer(url: str, question: str, k: int = 4) -> str:
         filter={"video_id": vid},
     )
 
+    
     context_block = "\n".join(d.page_content for d in rel_docs)
     prompt = f"""
     You are an expert assistant. Use ONLY the context below to answer.
