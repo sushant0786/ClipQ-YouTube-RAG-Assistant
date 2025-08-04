@@ -26,6 +26,7 @@ class GoogEmbedder:                    # LangChain wrapper
         return single.embedding
 
 
+
 # ───────────────────────────────────────── vector store
 CHROMA_PATH = "chroma"                 # persisted on disk
 vectordb = Chroma(
