@@ -7,7 +7,7 @@ def embed_batch(texts: List[str]) -> List[List[float]]:
         requests=[{"content": t} for t in texts],
         config=types.EmbedContentConfig(task_type="RETRIEVAL_DOCUMENT"),
     )
-    # resp.embeddings is a list[EmbedContentResponse]; pick .value
+    # resp.embeddings is  a list[EmbedContentResponse]; pick .value
     return [e.embedding for e in resp.embeddings]
 
 
@@ -23,6 +23,8 @@ class GoogEmbedder:                    # LangChain wrapper
             config=types.EmbedContentConfig(task_type="SEMANTIC_SIMILARITY"),
         )
         return single.embedding
+
+
 
 
 
