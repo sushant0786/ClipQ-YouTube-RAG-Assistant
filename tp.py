@@ -7,10 +7,8 @@ def embed_batch(texts: List[str]) -> List[List[float]]:
         requests=[{"content": t} for t in texts],
         config=types.EmbedContentConfig(task_type="RETRIEVAL_DOCUMENT"),
     )
-    # resp.embeddings is a list[EmbedContentResponse]; pick .values
+    # resp.embeddings is a list[EmbedContentResponse]; pick .value
     return [e.embedding for e in resp.embeddings]
-
-
 
 
 
