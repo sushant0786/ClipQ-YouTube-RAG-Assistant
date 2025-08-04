@@ -13,7 +13,8 @@ MODEL_ID = "gemini-2.0-flash-lite"
 async def summarise(body:UrlBody):
   transcript=get_transcript(body.url)
 
-  prompt = (
+  
+   prompt = (
       "Summarise the following transcript into concise, high-level bullet points. "
       "Focus on key facts and actionable insights.\n\n"
       f"{transcript}"
